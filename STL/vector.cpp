@@ -17,17 +17,17 @@ int main(){
 
     vector<int> v(10, -1); //cria vector de 10 posições com o valor -1; O(N)
 
-    // printa todos os elementos do vector
+    // printa todos os elementos do vector; O(N)
     for(int i:v){
         cout << i << " ";
     }
 
-    // printa todos os elementos do vector
+    // printa todos os elementos do vector; O(N)
     for(int i=0; i<(int)v.size(); i++){
         cout << v[i] << " ";
     }
 
-    //ponteiro para o primeiro elemento com valor maior ou igual a x, se não houver aponta para v.end()
+    //ponteiro para o primeiro elemento com valor maior ou igual a x, se não houver aponta para v.end(); O(logN)
     auto it = lower_bound(v.begin(), v.end(), x);
 
     if(it!=v.end()){ //se o elemento existir
@@ -37,7 +37,7 @@ int main(){
         cout << it-v.begin() << endl; //printa a posição do elemento indexada em 0
     }
 
-    //ponteiro para o primeiro elemento com valor maior que x, se não houver aponta para v.end()
+    //ponteiro para o primeiro elemento com valor maior que x, se não houver aponta para v.end(); O(logN)
     auto it = upper_bound(v.begin(), v.end(), x);
 
     return 0;
