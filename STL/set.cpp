@@ -24,7 +24,7 @@ int main(){
 
     auto it = s.upper_bound(1); //ponteiro para o primeiro elemento com valor maior que x, se não houver aponta para s.end();
 
-    //também pode usar erase em um iterador, é recomendado desta forma, quando for um multiset, se não todos os elementos com valor x serão removidos
+    //também pode usar erase em um iterador, é recomendado esta forma, quando for um multiset, se não, todos os elementos com valor x serão removidos
     s.erase(it);
 
     //printa todos os elementos; O(N)
