@@ -11,6 +11,8 @@ int main(){
 
     v.pop_back(); //remove o último elemento do vector; O(1)
 
+    v.clear() //remove todos os elementos do vector; O(N)
+
     sort(v.begin(), v.end()); //ordena vector em ordem crescente; O(NlogN)
 
     vector<int> v(10); //cria vector de 10 posições com o valor 0; O(N)
