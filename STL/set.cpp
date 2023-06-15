@@ -16,6 +16,8 @@ int main(){
 
     s.clear(); //remove todos os elementos; 0(N)
 
+    s.size(); //tamanho do set; O(1)
+
     auto it = s.find(1); //ponteiro para um elemento com mesmo valor de x, se não houver aponta para s.end()
 
     auto it = s.lower_bound(1); //ponteiro para o primeiro elemento com valor maior ou igual a x, se não houver aponta para s.end();
