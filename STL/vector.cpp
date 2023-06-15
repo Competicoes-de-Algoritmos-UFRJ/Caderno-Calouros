@@ -15,9 +15,9 @@ int main(){
 
     sort(v.begin(), v.end()); //ordena vector em ordem crescente; O(NlogN)
 
-    vector<int> v(10); //cria vector de 10 posições com o valor 0; O(N)
+    vector<int> v(10); //cria vector com 10 elementos de valor 0; O(N)
 
-    vector<int> v(10, -1); //cria vector de 10 posições com o valor -1; O(N)
+    vector<int> v(10, -1); //cria vector com 10 elementos de valor -1; O(N)
 
     // printa todos os elementos do vector; O(N)
     for(int i:v){
