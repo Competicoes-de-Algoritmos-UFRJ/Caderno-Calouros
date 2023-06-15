@@ -21,5 +21,15 @@ int main(){
 
     s.erase(it); //também pode usar erase em um iterador
 
+    //printa todos os elementos; O(N)
+    for(int i:s){
+        cout << i << " ";
+    }
+    
+    //printa todos os elementos; O(N)
+    for(auto it=s.begin(); it!=s.end(); it++){
+        cout << *it << " ";
+    }
+
     return 0;
 }
