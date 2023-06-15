@@ -9,7 +9,7 @@ int main(){
 
     s.insert(1); //insere elemento
 
-    s.erase(1); //remove elemento(se não houver esse elemento, vai ocorrer um erro)
+    s.erase(1); //remove elemento(se não houver esse elemento, vai ocorrer um erro, logo se não tiver certeza, utilizar o find e checar primeiro)
 
     s.clear(); //remove todos os elementos; 0(N)
 
