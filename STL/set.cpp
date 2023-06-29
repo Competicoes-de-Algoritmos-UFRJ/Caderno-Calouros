@@ -16,9 +16,11 @@ int main(){
 
     s.clear(); //remove todos os elementos; 0(N)
 
-    s.size(); //tamanho do set; O(1)
+    s.empty() //checa se o set está vazio; O(1)
 
-    s.count(1) //quantidade de vezes que 1 está presente no set (O(logN)) ou no multiset (O(N))
+    s.size() //tamanho do set; O(1)
+
+    s.count(1); //quantidade de vezes que 1 está presente no set (O(logN)) ou no multiset (O(N))
 
     auto it = s.find(1); //ponteiro para um elemento com mesmo valor de x, se não houver aponta para s.end()
 
