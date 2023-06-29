@@ -12,6 +12,7 @@ void bfs(int x){
 
     while(!fila.empty()){
         int v = fila.front();
+        fila.pop();
         
         vis[v]=1; //marco o vértice como visitado
 
