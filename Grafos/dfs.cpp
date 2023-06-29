@@ -6,7 +6,7 @@ int vis[mxn];
 vector<int> adj[mxn];
 
 void dfs(int x){
-    vis[x]=1; //marco o véritice como visitado
+    vis[x]=1; //marco o vértice como visitado
 
     for(int i:adj[x]){
         
