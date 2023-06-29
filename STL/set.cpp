@@ -18,12 +18,16 @@ int main(){
 
     s.size(); //tamanho do set; O(1)
 
+    s.count(1) //quantidade de vezes que 1 está presente no set(logN) ou no multiset(N)
+
     auto it = s.find(1); //ponteiro para um elemento com mesmo valor de x, se não houver aponta para s.end()
 
     auto it = s.lower_bound(1); //ponteiro para o primeiro elemento com valor maior ou igual a x, se não houver aponta para s.end();
 
     auto it = s.upper_bound(1); //ponteiro para o primeiro elemento com valor maior que x, se não houver aponta para s.end();
 
+    cout << *it << endl; //printar valor do ponteiro
+    
     //também pode usar erase em um iterador, é recomendado esta forma, quando for um multiset, se não, todos os elementos com valor x serão removidos
     s.erase(it);
 
