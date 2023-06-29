@@ -1,4 +1,4 @@
-const int mxn = (int) 1e5+5;
+const int mxn = 1e5+5;
 
 // vis[i] indica se o vértice i já foi visitado, se for igual a 1, quer dizer que sim, se for igual a 0, não
 // adj[i] é a lista de adjacência do vértice i
