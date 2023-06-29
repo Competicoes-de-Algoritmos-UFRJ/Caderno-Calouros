@@ -1,5 +1,8 @@
+//v é o vector no qual estão os elementos
+//x é o número que eu quero procurar
+
 int busca(vector<int> &v, int x){
-    int l = 0, r = (int)v.size()-1;
+    int l = 0, r = (int)v.size()-1; //declaro o intervalo da busca binária
 
     while(l<=r){
         int mid = (l+r)/2;
