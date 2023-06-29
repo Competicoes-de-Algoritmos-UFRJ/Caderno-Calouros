@@ -6,9 +6,11 @@ int vis[mxn];
 vector<int> adj[mxn];
 
 void dfs(int x){
-    vis[x]=1;
+    vis[x]=1; //marco o véritice como visitado
 
     for(int i:adj[x]){
+        
+        //se o vizinho ainda não foi visitado, o visito
         if(vis[i]==0){
             dfs(i);
         }
