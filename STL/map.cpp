@@ -17,7 +17,9 @@ int main(){
 
     m.clear(); //remove todos os elementos; 0(N)
 
-    m.size(); //tamanho do map; O(1)
+    m.empty() //checa se o map está vazio; O(1)
+    
+    m.size() //tamanho do map; O(1)
 
     auto it = m.find("Tiago"); //ponteiro para um elemento com mesmo valor de x, se não houver aponta para m.end()
 
