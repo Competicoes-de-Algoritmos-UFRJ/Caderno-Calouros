@@ -30,6 +30,7 @@ int main(){
     }
 
     //ponteiro para o primeiro elemento com valor maior ou igual a x, se não houver aponta para v.end(); O(logN)
+    //precisa estar ordenado
     auto it = lower_bound(v.begin(), v.end(), x);
 
     if(it!=v.end()){ //se o elemento existir
