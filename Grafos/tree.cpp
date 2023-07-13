@@ -6,7 +6,7 @@ using namespace std;
 
 const int mxn = 1e5+5;
 
-int n, m, dist[mxn], excen[mxn];
+int n, dist[mxn], excen[mxn];
 vector<int> adj[mxn];
 
 void calc_dist(int x){
@@ -29,9 +29,20 @@ void dfs(int x, int pai){
 
 int main(){
 
+    cin >> n;
+
+    for(int i=1; i<n; i++){
+        int a, b;
+
+        cin >> a >> b;
+
+        adj[a].push_back(b);
+        adj[b].push_back(a);
+    }
+
+
     int maior=0, menor=INF, ponta_1=0, ponta_2=0;
     int diam, centro;
-
 
     calc_dist(1); //calculando distância para o vértice 1
 
