@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
 #define INF 0x3f3f3f3f
 
 const int mxn = 1e5+5;
@@ -27,20 +23,7 @@ void dfs(int x, int pai){
     }
 }
 
-int main(){
-
-    cin >> n;
-
-    for(int i=1; i<n; i++){
-        int a, b;
-
-        cin >> a >> b;
-
-        adj[a].push_back(b);
-        adj[b].push_back(a);
-    }
-
-
+void tree(){
     int maior=0, menor=INF, ponta_1=0, ponta_2=0;
     int diam, centro;
 
@@ -90,5 +73,4 @@ int main(){
         }
     }
     cout << centro << endl;
-    return 0;
 }
