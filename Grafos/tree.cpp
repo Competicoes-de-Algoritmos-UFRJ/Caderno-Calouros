@@ -2,6 +2,9 @@
 
 const int mxn = 1e5+5;
 
+// dist[i] é a distância do vértice i para a raiz
+// excen[i] é a excentrecidade do vértice i
+// adj[i] é a lista de adjacência do vértice i
 int n, dist[mxn], excen[mxn];
 vector<int> adj[mxn];
 
@@ -41,11 +44,12 @@ void tree(){
     calc_dist(ponta_1); //calculando distância para a primeira ponta
 
     //o vértice mais distante da primeira ponta, será a segunda ponta do diâmetro, e distância entre as duas será igual ao diâmetro
-    //a excentricidade do vértice será igual ao máximo entre a distância dele da primeira com a segunda ponta
+    
+    //a excentricidade do vértice será igual ao máximo entre as distâncias dele com as duas pontas 
     
     maior=0;
     for(int i=1; i<=n; i++){
-        //nesse momento estamos igualando a excentricidade a distância da primeira ponta, e depois iremos comparar com a segunda
+        //nesse momento estamos igualando a excentricidade com a distância da primeira ponta, e depois iremos comparar com a segunda
         excen[i]=dist[i];
 
         if(dist[i]>maior){
