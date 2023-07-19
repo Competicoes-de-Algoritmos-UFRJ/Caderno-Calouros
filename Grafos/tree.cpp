@@ -8,13 +8,6 @@ const int mxn = 1e5+5;
 int n, dist[mxn], excen[mxn];
 vector<int> adj[mxn];
 
-void calc_dist(int x){
-    for(int i=1; i<=n; i++){
-        dist[i]=0;
-    }
-    dfs(x, 0);
-}
-
 void dfs(int x, int pai){
     for(int i:adj[x]){
         
@@ -24,6 +17,13 @@ void dfs(int x, int pai){
 
         dfs(i, x);
     }
+}
+
+void calc_dist(int x){
+    for(int i=1; i<=n; i++){
+        dist[i]=0;
+    }
+    dfs(x, 0);
 }
 
 void tree(){
