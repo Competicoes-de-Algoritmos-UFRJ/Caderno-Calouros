@@ -4,7 +4,7 @@ while(m--){
 	graph[b][a] = min(graph[b][a], c);
 }
 
-for(int i = 0; i < n; i++) graph[i][i] = 0;
+for(int i = 0; i < n; i++) graph[i][i] = 0; //
 
 for(int k = 0; k < n; k++){
 	for(int i = 0; i < n; i++){
