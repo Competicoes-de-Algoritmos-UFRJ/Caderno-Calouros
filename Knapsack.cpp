@@ -28,7 +28,7 @@ void build(){
     
     //IMPORTANTE:
     //lembrar que dp[i][cap] SEMPRE define a melhor resposta com os estados i e cap
-    //Tente usar a intuição quando for montar as transições
+    //Tenta usar a intuição quando for montar as transições
 
     //definindo casos bases
     dp[0][0]=0; //quando eu não tenho nenhum livro e a capacidade é 0, a resposta é 0
